@@ -1,0 +1,42 @@
+.task-todo{
+    margin-top: 4em;
+}
+
+.panel-footer{
+    background-color: #FAFAFA;
+}
+
+.panel-danger{
+    background-color: #E53935;
+    border-color: #E53935;
+    text-align: center;
+}
+
+.todo-heading{
+    font-family: RussoOne;
+    font-size: 1.2em;
+    color: #263238;
+}
+
+.todo-well{
+    font-family: Lemonada;
+    font-size: 1.2em;
+    background-color: #F44336;
+    color: #FAFAFA;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.todo-well:hover{
+    box-shadow: 0px 0px 4px 1px #9E9E9E;
+}
+
+.todo-editicon{
+    float: right;
+    margin: 0.2em;
+}
+
+.fa-th-list{
+    color: #263238;
+}
+

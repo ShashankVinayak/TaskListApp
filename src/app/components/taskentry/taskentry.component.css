@@ -1,0 +1,20 @@
+div.heading {
+    margin-top:14em;
+}
+
+h1.heading{
+    font-family: Exo2;
+    font-size: 4em;
+    color: #E91E63;
+    text-align: center;
+}
+
+hr{
+    border: 0.05em solid #E91E63;
+}
+
+.task-entry:focus{
+    box-shadow: 0px 0px 15px 1px darkgray;
+    border-color: #E91E63;
+}
+

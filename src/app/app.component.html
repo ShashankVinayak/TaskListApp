@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-sm-push-4">
+            <app-task-entry></app-task-entry>
+        </div>
+        <div class="col-md-4 col-sm-4 col-sm-pull-4">
+            <app-task-todo></app-task-todo>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <app-task-complete></app-task-complete>
+        </div>
+    </div>
+</div>
