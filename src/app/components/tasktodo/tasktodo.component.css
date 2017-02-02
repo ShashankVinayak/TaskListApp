@@ -4,6 +4,7 @@
 
 .panel-footer{
     background-color: #FAFAFA;
+    list-style-type: none;
 }
 
 .panel-danger{

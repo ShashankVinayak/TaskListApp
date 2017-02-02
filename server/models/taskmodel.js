@@ -7,4 +7,4 @@ const taskSchema = new Schema({
     completed: { type: Boolean }
 });
 
-module.exports = mongoose.model('Tasklist', taskSchema);
+module.exports = mongoose.model('Task', taskSchema);

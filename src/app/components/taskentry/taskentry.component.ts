@@ -10,19 +10,20 @@ import { Task } from '../../models/Task';
 })
 export class TaskEntryComponent {
 
-    task: Task;
     taskdetail: string;
     completed: boolean;
 
     constructor(private taskService: TaskService) { }
 
     addTask(event) {
-        this.task = {
+        const task: Task = {
             taskdetail: event.target.value,
             completed: false
         };
 
-        this.taskService.addTask(this.task)
-            .subscribe(data => console.log(data));
+        this.taskService.addTask(task)
+            .subscribe(data => {
+                console.log(data);
+            });
     }
 }

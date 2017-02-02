@@ -5,31 +5,21 @@
                 <span class="todo-heading"> TO DO</span>
             </i>
         </div>
-        <div class="panel-footer" style="height: 30em"> 
-            <div class="well well-sm todo-well">
-                <div class="row">
-                    <div class="col-md-8">
-                        Complete Task List App
-                    </div>
-                    <div class="col-md-4">
-                        <a><i class="fa fa-check fa-lg todo-editicon" style="color: white"></i></a>
-                        <i class="fa fa-trash fa-lg todo-editicon"></i> 
-                        <i class="fa fa-pencil fa-lg todo-editicon"></i> 
-                    </div>
-                </div> 
-            </div>
-            <div class="well well-sm todo-well">
-                <div class="row">
-                    <div class="col-md-8">
-                        Complete T App
-                    </div>
-                    <div class="col-md-4">
-                        <a><i class="fa fa-check fa-lg todo-editicon" style="color: white"></i></a>
-                        <i class="fa fa-trash fa-lg todo-editicon"></i> 
-                        <i class="fa fa-pencil fa-lg todo-editicon"></i> 
-                    </div>
-                </div> 
-            </div>
+        <div class="panel-footer" style="max-height: 30em">
+            <li *ngFor="let task of tasks">     
+                <div class="well well-sm todo-well">
+                    <div class="row">
+                        <div class="col-md-8">
+                            {{task.taskdetail}}
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fa fa-check fa-lg todo-editicon" style="color: white"></i>
+                            <i class="fa fa-trash fa-lg todo-editicon" (click)="deleteTask(task._id)"></i> 
+                            <!--<i class="fa fa-pencil fa-lg todo-editicon"></i>--> 
+                        </div>
+                    </div> 
+                </div>
+            </li>     
         </div>
     </div>
 </div>
