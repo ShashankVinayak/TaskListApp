@@ -4,6 +4,8 @@
 
 .panel-footer{
     background-color: #FAFAFA;
+    list-style-type: none;
+    padding: 10px 0px;
 }
 
 .panel-success{
@@ -38,4 +40,18 @@
 
 .fa-check{
     color:#263238;
+}
+
+div.ps-scrollbar-y-rail{
+    display: none !important;
+}
+
+div.ps-scrollbar-y{
+    display: none !important;
+}
+
+.panel-content{
+    max-height: 28em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
 }

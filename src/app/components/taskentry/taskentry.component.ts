@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../models/Task';
 
@@ -10,19 +10,23 @@ import { Task } from '../../models/Task';
 })
 export class TaskEntryComponent {
 
+    @Output() refreshToDo = new EventEmitter();
     taskdetail: string;
     completed: boolean;
 
     constructor(private taskService: TaskService) { }
 
-    addTask(event) {
+    addTask(toDoTask) {
         const task: Task = {
-            taskdetail: event.target.value,
+            taskdetail: toDoTask.value,
             completed: false
         };
 
+        toDoTask.value = null;
+
         this.taskService.addTask(task)
             .subscribe(data => {
+                this.refreshToDo.emit();
                 console.log(data);
             });
     }

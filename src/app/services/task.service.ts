@@ -19,8 +19,23 @@ export class TaskService {
             .map(res => res.json());
     }
 
-    getAllTask() {
-        return this.http.get('/api/task')
+    getToDoTask() {
+        return this.http.get('/api/task/todo')
+            .map(res => res.json());
+    }
+
+    getCompletedTask() {
+        return this.http.get('/api/task/complete')
+            .map(res => res.json());
+    }
+
+    completedTask(id) {
+        return this.http.put('/api/task/complete/' + id, null)
+            .map(res => res.json());
+    }
+
+    incompleteTask(id){
+        return this.http.put('/api/task/incomplete/' + id, null)
             .map(res => res.json());
     }
 }

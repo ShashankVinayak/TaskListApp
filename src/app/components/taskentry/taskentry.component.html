@@ -1,11 +1,11 @@
 <div>
     <div class="heading">
-        <h1 class="heading">MEM-LIST</h1>
+        <h1 class="heading">DO IT-LIST</h1>
     </div>
     <hr>
     <div class="form-horizontal">
         <div class="form-group-lg">
-            <input type="text" class="form-control task-entry" name="task" placeholder="Let's Add It!" (keyup.enter)="addTask($event)">
+            <input type="text" class="form-control task-entry" name="task" placeholder="Let's Do It!" #task (keyup.enter)="addTask(task)">
         </div>
     </div>
 </div>
