@@ -22,8 +22,8 @@
 
 body{
     background-color: #F5F5F5 !important;
-    background-image: url('./doit.png');
+    background-image: url('./tasklist.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 20%;
 }
