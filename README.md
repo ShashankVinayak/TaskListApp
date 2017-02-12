@@ -9,7 +9,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 * [MongoDB](https://www.mongodb.com/download-center)  
 * [angular-cli](https://github.com/angular/angular-cli)  
 
-## How to get the app Up and running
+## How to get the app Up and Running
 
 1. Clone this repo / Download and extract the zip.
 2. On Terminal
