@@ -1,3 +1,5 @@
+// Contains code to create model for the backend database
+
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
