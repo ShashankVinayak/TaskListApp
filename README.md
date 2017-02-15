@@ -18,3 +18,9 @@ This project was generated with [angular-cli](https://github.com/angular/angular
     * Run `ng build --prod` (Creates `dist` folder).
     * Start [mongodb](https://docs.mongodb.com/manual/administration/install-community/) on another terminal.
     * Run `node server` to kickstart the app!
+
+
+### Note : runapp.sh can be used to build and run the app , but the above method is preferred.
+
+* Script is tested only on Windows.
+* The Script `runapp.sh` assumes mongodb Windows service is created upfront
