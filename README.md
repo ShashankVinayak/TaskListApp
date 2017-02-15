@@ -20,7 +20,8 @@ This project was generated with [angular-cli](https://github.com/angular/angular
     * Run `node server` to kickstart the app!
 
 
-### Note : runapp.sh can be used to build and run the app , but the above method is preferred.
+#### Note : runapp.sh can be used to build and run the app , but the above method is preferred.
 
 * Script is tested only on Windows.
-* The Script `runapp.sh` assumes mongodb Windows service is created upfront
+* The Script `runapp.sh` assumes mongodb Windows service is created upfront.
+* Refer [this](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#configure-a-windows-service-for-mongodb-community-edition) to create MongoDB Service on Windows.
