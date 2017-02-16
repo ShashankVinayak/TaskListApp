@@ -1,23 +1,22 @@
-<div class="task-todo">
+<div class="task-container">
     <div class="panel panel-danger">
         <div class="panel-body">
             <i class="fa fa-th-list fa-lg">
-                <span class="todo-heading"> TASK TO DO</span>
+                <span class="task-container-heading"> TASK TO DO</span>
             </i>
         </div>
         <div class="panel-footer">
             <perfect-scrollbar [config]="config" style="padding-top: 1em;">
                 <div class="panel-content">
                     <li *ngFor="let task of tasks">     
-                        <div class="well well-sm todo-well">
+                        <div class="well well-sm task-well todo-well">
                             <div class="row">
                                 <div class="col-md-8">
                                     {{task.taskdetail}}
                                 </div>
                                 <div class="col-md-4">
-                                    <i class="fa fa-check fa-lg todo-editicon" style="color: white" (click)="completeTask(task._id)"></i>
-                                    <i class="fa fa-trash fa-lg todo-editicon" (click)="deleteTask(task._id)"></i> 
-                                    <!--<i class="fa fa-pencil fa-lg todo-editicon"></i>--> 
+                                    <i class="fa fa-check fa-lg editicon" style="color: white" (click)="completeTask(task._id)"></i>
+                                    <i class="fa fa-trash fa-lg editicon" (click)="deleteTask(task._id)"></i>  
                                 </div>
                             </div> 
                         </div>

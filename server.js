@@ -15,9 +15,11 @@ const db = "mongodb://localhost/tasklist";
 const indexRouter = require('./server/routes/index');
 const apiRouter = require('./server/routes/api');
 
+//BodyParser MiddleWare
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
+// Static Content MiddleWare
 app.use(express.static(path.join(__dirname,'dist')));
 
 app.use('/',indexRouter);

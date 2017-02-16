@@ -1,22 +1,22 @@
-<div class="task-complete">
+<div class="task-container">
     <div class="panel panel-success">
         <div class="panel-body">
             <i class="fa fa-check-square fa-lg">
-                <span class="complete-heading"> TASK COMPLETE</span>
+                <span class="task-container-heading"> TASK COMPLETE</span>
             </i>
         </div>
         <div class="panel-footer">
             <perfect-scrollbar [config]="config" style="padding-top: 1em;">
                 <div class="panel-content">
                     <li *ngFor="let task of tasks">     
-                        <div class="well well-sm complete-well">
+                        <div class="well well-sm task-well complete-well">
                             <div class="row">
                                 <div class="col-md-8">
                                     {{task.taskdetail}}
                                 </div>
                                 <div class="col-md-4">
-                                    <i class="fa fa-times fa-lg complete-editicon" (click)="incompleteTask(task._id)"></i> 
-                                    <i class="fa fa-trash fa-lg complete-editicon" (click)="deleteTask(task._id)"></i>
+                                    <i class="fa fa-times fa-lg editicon" (click)="incompleteTask(task._id)"></i> 
+                                    <i class="fa fa-trash fa-lg editicon" (click)="deleteTask(task._id)"></i>
                                 </div>
                             </div> 
                         </div>

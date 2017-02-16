@@ -1,3 +1,5 @@
+// Contains code to display the start page
+
 const express = require('express');
 const router = express.Router();
 

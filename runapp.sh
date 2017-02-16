@@ -42,6 +42,9 @@ rm -rf $pwd/kill.log $pwd/kill.err
 ls -al $pwd/node_modules > $pwd/lslog.log 2> $pwd/lslog.err 
 node_modules_status=$?
 if [ "$node_modules_status" -ne "0" ]; then
+    echo -e "--------------------------------------------"
+    echo -e "Installing node modules..."
+    echo -e "--------------------------------------------"
     npm install
     npm_status=$?
 

@@ -1,57 +1,13 @@
-.task-complete{
-    margin-top: 4em;
-}
-
-.panel-footer{
-    background-color: #FAFAFA;
-    list-style-type: none;
-    padding: 10px 0px;
-}
-
 .panel-success{
     background-color: #4CAF50;
     border-color: #4CAF50;
     text-align: center;
 }
 
-.complete-heading{
-    font-family: RussoOne;
-    font-size: 1.2em;
-    color: #263238;
-}
-
 .complete-well{
-    font-family: Lemonada;
-    font-size: 1.2em;
     background-color: #00E676;
-    color: #FAFAFA;
-    text-align: left;
-    word-wrap: break-word;
-}
-
-.complete-well:hover{
-    box-shadow: 0px 0px 4px 1px #9E9E9E;
-}
-
-.complete-editicon{
-    float: right;
-    margin: 0.2em;
 }
 
 .fa-check{
     color:#263238;
-}
-
-div.ps-scrollbar-y-rail{
-    display: none !important;
-}
-
-div.ps-scrollbar-y{
-    display: none !important;
-}
-
-.panel-content{
-    max-height: 28em;
-    padding-left: 1.8em;
-    padding-right: 1.8em;
 }

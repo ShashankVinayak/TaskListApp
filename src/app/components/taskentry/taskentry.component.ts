@@ -1,12 +1,12 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../models/Task';
 
 @Component({
     selector: 'app-task-entry',
     templateUrl: './taskentry.component.html',
-    styleUrls: ['./taskentry.component.css'],
-    providers: [TaskService]
+    styleUrls: ['./taskentry.component.css']
 })
 export class TaskEntryComponent {
 

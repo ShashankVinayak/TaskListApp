@@ -19,11 +19,6 @@ export class AppComponent implements OnInit {
     this.getCompletedTask();
   }
 
-  updateToDo() {
-    console.log('updateToDo');
-    this.getToDoTask();
-  }
-
   getToDoTask() {
     this.taskService.getToDoTask().subscribe(data => {
       this.todoTasks = data;
@@ -36,6 +31,11 @@ export class AppComponent implements OnInit {
       this.completedTasks = data;
       console.log(data);
     });
+  }
+
+  updateToDo() {
+    console.log('updateToDo');
+    this.getToDoTask();
   }
 
   updateTaskComplete(){
